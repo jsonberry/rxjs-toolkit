@@ -4,7 +4,7 @@ import { mergeMap } from 'rxjs/operators';
 
 export function hasPropsGuard<T>(
   signal: T,
-  args: Array<keyof T>
+  args: string[]
 ): signal is Required<T> {
   for (const arg of args) {
     if (!_has(signal, arg)) {
@@ -15,7 +15,7 @@ export function hasPropsGuard<T>(
   return true;
 }
 
-export function hasProps<T>(...args: Array<keyof T>) {
+export function hasProps<T>(...args: string[]) {
   return (source$: Observable<T>) =>
     source$.pipe(
       mergeMap((signal: T) =>
