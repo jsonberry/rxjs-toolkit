@@ -1,7 +1,11 @@
 import test from 'ava';
 import { of } from 'rxjs';
 import { catchError, mapTo, tap } from 'rxjs/operators';
-import { errorMessage, isNonNullable, neverNullable } from './never-nullable';
+import {
+  isNonNullable,
+  neverNullable,
+  neverNullableErrorMessage
+} from './never-nullable';
 
 test('neverNullable should pass the signal as is when it is not nullable', t => {
   return of('foo').pipe(
@@ -46,12 +50,12 @@ test('neverNullable should throw an error when the value is nullable', t => {
   return of(null).pipe(
     neverNullable,
     catchError(error => of(error.message)),
-    tap(message => t.is(message, errorMessage)),
+    tap(message => t.is(message, neverNullableErrorMessage)),
 
     mapTo(undefined),
     neverNullable,
     catchError(error => of(error.message)),
-    tap(message => t.is(message, errorMessage))
+    tap(message => t.is(message, neverNullableErrorMessage))
   );
 });
 
