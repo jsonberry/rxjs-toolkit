@@ -2,7 +2,7 @@ import _has from 'lodash.has';
 import { Observable, of, throwError } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
-export const errorMessage =
+export const hasPropsErrorMessage =
   'Signal was missing required property. Check the interface of the signal for the properties being asked for.';
 
 export function hasPropsGuard<T>(
@@ -24,7 +24,7 @@ export function hasProps<T>(...args: string[]) {
       mergeMap((signal: T) =>
         hasPropsGuard(signal, args)
           ? of(signal)
-          : throwError(new Error(errorMessage))
+          : throwError(new Error(hasPropsErrorMessage))
       )
     );
 }

@@ -1,7 +1,7 @@
 import test from 'ava';
 import { of } from 'rxjs';
 import { catchError, mapTo, tap } from 'rxjs/operators';
-import { errorMessage, hasProps, hasPropsGuard } from './has-props';
+import { hasProps, hasPropsErrorMessage, hasPropsGuard } from './has-props';
 
 const fixture = { foo: 'foo', bar: 'bar', baz: 'baz', orb: { rob: 'bro' } };
 
@@ -45,11 +45,11 @@ test('hasProps should throw an error when there are missing props', t => {
   return of(fixture).pipe(
     hasProps('rob'),
     catchError((error: Error) => of(error.message)),
-    tap(message => t.is(message, errorMessage)),
+    tap(message => t.is(message, hasPropsErrorMessage)),
 
     mapTo(fixture),
     hasProps('foo', 'orb.rob', 'zar'),
     catchError((error: Error) => of(error.message)),
-    tap(message => t.is(message, errorMessage))
+    tap(message => t.is(message, hasPropsErrorMessage))
   );
 });
