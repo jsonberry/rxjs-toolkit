@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.2.0...v1.3.0) (2019-01-08)
+
+
+### Features
+
+* add propsAreTruthy ([9dee5d4](https://github.com/jsonberry/rxjs-toolkit/commit/9dee5d4))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.1.2...v1.2.0) (2019-01-08)
 
