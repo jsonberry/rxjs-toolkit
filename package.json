@@ -51,12 +51,14 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "lodash.get": "^4.4.2",
     "lodash.has": "^4.5.2",
     "lodash.pick": "^4.4.0",
     "rxjs": "^6.3.3",
     "sha.js": "^2.4.11"
   },
   "devDependencies": {
+    "@types/lodash.get": "^4.4.4",
     "@types/lodash.has": "^4.5.4",
     "@types/lodash.pick": "^4.4.4",
     "ava": "^1.0.1",
