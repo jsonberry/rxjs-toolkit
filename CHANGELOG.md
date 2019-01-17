@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.3.1...v1.4.0) (2019-01-17)
+
+
+### Features
+
+* add mapToDictionary ([3ab7cee](https://github.com/jsonberry/rxjs-toolkit/commit/3ab7cee))
+* add mapToList ([507179b](https://github.com/jsonberry/rxjs-toolkit/commit/507179b))
+* add spread ([4d2b1f9](https://github.com/jsonberry/rxjs-toolkit/commit/4d2b1f9))
+* add stagger ([dfce3e5](https://github.com/jsonberry/rxjs-toolkit/commit/dfce3e5))
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/jsonberry/rxjs-toolkit/compare/v1.3.0...v1.3.1) (2019-01-08)
 
