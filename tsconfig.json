@@ -41,8 +41,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "@app/operators": ["src/lib/operators/index.ts"],
-      "@app/models": ["src/lib/models/index.ts"]
+      "@app/operators": ["src/lib/operators/index.ts"]
     }
   },
   "include": ["src/**/*.ts"],
