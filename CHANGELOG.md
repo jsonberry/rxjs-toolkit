@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/jsonberry/rxjs-toolkit/compare/v1.5.0...v1.5.1) (2019-01-22)
+
+
+### Bug Fixes
+
+* use relative import for ts model ([9fb2e17](https://github.com/jsonberry/rxjs-toolkit/commit/9fb2e17))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.4.0...v1.5.0) (2019-01-22)
 
