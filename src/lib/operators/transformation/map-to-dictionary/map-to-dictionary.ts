@@ -1,6 +1,6 @@
-import { Dictionary } from '@app/models';
 import { Observable, OperatorFunction } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Dictionary } from '../../../models';
 
 export function mapToDictionary<T>(
   idSelector?: string | ((signal: T) => number | string)
