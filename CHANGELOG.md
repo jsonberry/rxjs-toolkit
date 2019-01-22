@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.4.0...v1.5.0) (2019-01-22)
+
+
+### Features
+
+* add delayedCollection ([45a6d54](https://github.com/jsonberry/rxjs-toolkit/commit/45a6d54)), closes [#25](https://github.com/jsonberry/rxjs-toolkit/issues/25)
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/jsonberry/rxjs-toolkit/compare/v1.3.1...v1.4.0) (2019-01-17)
 
